@@ -1,4 +1,5 @@
 import styles from './postUser.module.css'
+import { getUser } from '@/lib/data';
 // FETCH DATA WITH AN API
 // const getData= async (userId)=>{
 //     const res = await fetch (`https://jsonplaceholder.typicode.com/users/${userId}`,{cache:"no-store"});
