@@ -2,6 +2,7 @@ import styles from './singlePost.module.css'
 import Image from 'next/image'
 import { Suspense } from 'react';
 import { getPost } from '@/lib/data';
+import PostUser from '@/component/postUser/postUser'
 
 // FETCH DATA WITH AN API
 // const getData = async (slug)=>{
@@ -29,7 +30,7 @@ const SinglePostPage = async ({params}) => {
       <div className={styles.detail}>
       <Image src="/iphone.jpeg" alt='' width={50} height={50} className={styles.avatar}/>
       {post && < Suspense fallback={<div>loading</div>}>
-        <postUser userId = {post.userId}/>
+        <PostUser userId = {post.userId}/>
       </Suspense>}
       <div className={styles.detailText}>
         <span className={styles.detailTitle}>Published</span>
