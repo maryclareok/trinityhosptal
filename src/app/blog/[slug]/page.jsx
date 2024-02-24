@@ -1,8 +1,8 @@
 import styles from './singlePost.module.css'
 import Image from 'next/image'
-import  postUser from '@/component/postUser/postUser';
 import { Suspense } from 'react';
 import { getPost } from '@/lib/data';
+import  postUser from '@/component/postUser/postUser';
 // FETCH DATA WITH AN API
 // const getData = async (slug)=>{
 //   const res = await fetch (`https://jsonplaceholder.typicode.com/posts/${slug}`);
